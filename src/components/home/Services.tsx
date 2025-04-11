@@ -8,25 +8,29 @@ const services = [
     icon: <HeartPulse className="h-12 w-12 text-primary" />,
     title: "Maternal Health",
     description: "Comprehensive care for expectant and new mothers, including prenatal and postnatal consultations, nutrition guidance, and mental health support.",
-    link: "/services/maternal"
+    link: "/services/maternal",
+    image: "https://images.unsplash.com/photo-1607207686445-80b1a5096908?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },
   {
     icon: <Baby className="h-12 w-12 text-primary" />,
     title: "Pediatric Care",
     description: "Specialized healthcare for infants and children, including wellness checks, developmental assessments, and management of common childhood illnesses.",
-    link: "/services/pediatric"
+    link: "/services/pediatric",
+    image: "https://images.unsplash.com/photo-1574887427561-d3d5d58c9273?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },
   {
     icon: <Stethoscope className="h-12 w-12 text-primary" />,
     title: "Specialist Consultations",
     description: "Connect with pediatricians, obstetricians, gynecologists, and other specialists for expert medical advice and treatment plans.",
-    link: "/services/specialists"
+    link: "/services/specialists",
+    image: "https://images.unsplash.com/photo-1622902046580-2b47f47f5471?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },
   {
     icon: <CalendarClock className="h-12 w-12 text-primary" />,
     title: "Follow-up Care",
     description: "Regular follow-up appointments to monitor health progress, adjust treatment plans, and ensure optimal recovery and development.",
-    link: "/services/followup"
+    link: "/services/followup",
+    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   }
 ];
 
@@ -46,6 +50,13 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="border-border hover:shadow-md transition-shadow overflow-hidden">
+              <div className="aspect-[16/9] w-full overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={`${service.title} service`}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
               <CardHeader className="pb-2">
                 <div className="mb-4">{service.icon}</div>
                 <CardTitle className="text-2xl">{service.title}</CardTitle>

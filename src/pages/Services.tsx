@@ -85,7 +85,7 @@ const Services = () => {
               <div className="relative">
                 <div className="absolute -z-10 top-8 left-8 w-full h-full bg-primary/10 rounded-2xl"></div>
                 <img 
-                  src="/placeholder.svg" 
+                  src="https://images.unsplash.com/photo-1607207685437-bfe401de40f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="Maternal Health Services" 
                   className="rounded-2xl shadow-md w-full aspect-square object-cover"
                 />
@@ -96,7 +96,7 @@ const Services = () => {
               <div className="order-2 md:order-1 relative">
                 <div className="absolute -z-10 top-8 left-8 w-full h-full bg-accent/10 rounded-2xl"></div>
                 <img 
-                  src="/placeholder.svg" 
+                  src="https://images.unsplash.com/photo-1574887427561-d3d5d58c9273?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="Pediatric Care Services" 
                   className="rounded-2xl shadow-md w-full aspect-square object-cover"
                 />
