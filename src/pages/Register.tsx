@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { z } from "zod";
@@ -29,6 +28,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { Checkbox } from "@/components/ui/checkbox";
 
 const formSchema = z.object({
   firstName: z.string().min(2, { message: "First name must be at least 2 characters" }),
@@ -57,7 +57,6 @@ const Register = () => {
       password: "",
       confirmPassword: "",
       userType: "patient",
-      agreeToTerms: false,
     },
   });
 
@@ -246,23 +245,21 @@ const Register = () => {
                   render={({ field }) => (
                     <FormItem className="flex flex-row items-start space-x-2 space-y-0">
                       <FormControl>
-                        <div className="flex items-center space-x-2">
-                          <input
-                            type="checkbox"
-                            id="terms"
-                            checked={field.value}
-                            onChange={field.onChange}
-                            className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                          />
-                          <label 
-                            htmlFor="terms" 
-                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                          >
-                            I agree to the <Link to="/terms" className="text-primary hover:underline">Terms of Service</Link> and <Link to="/privacy" className="text-primary hover:underline">Privacy Policy</Link>
-                          </label>
-                        </div>
+                        <Checkbox
+                          checked={field.value}
+                          onCheckedChange={field.onChange}
+                          id="terms"
+                        />
                       </FormControl>
-                      <FormMessage />
+                      <div className="space-y-1 leading-none">
+                        <Label
+                          htmlFor="terms" 
+                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        >
+                          I agree to the <Link to="/terms" className="text-primary hover:underline">Terms of Service</Link> and <Link to="/privacy" className="text-primary hover:underline">Privacy Policy</Link>
+                        </Label>
+                        <FormMessage />
+                      </div>
                     </FormItem>
                   )}
                 />
