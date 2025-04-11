@@ -105,12 +105,12 @@ import { cn } from "@/lib/utils";
 
 const Doctors = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [specialty, setSpecialty] = useState("");
+  const [specialty, setSpecialty] = useState("all");
   
   const filteredDoctors = doctorsData.filter(doctor => {
     const matchesSearch = doctor.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          doctor.specialty.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesSpecialty = specialty === "" || doctor.specialty === specialty;
+    const matchesSpecialty = specialty === "all" || doctor.specialty === specialty;
     return matchesSearch && matchesSpecialty;
   });
 
@@ -147,7 +147,7 @@ const Doctors = () => {
                       <SelectValue placeholder="Select Specialty" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="">All Specialties</SelectItem>
+                      <SelectItem value="all">All Specialties</SelectItem>
                       {specialties.map((s) => (
                         <SelectItem key={s} value={s}>{s}</SelectItem>
                       ))}
