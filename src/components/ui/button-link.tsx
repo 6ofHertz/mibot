@@ -1,6 +1,6 @@
 
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { Link, LinkProps } from "react-router-dom";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
@@ -34,17 +34,26 @@ const buttonVariants = cva(
 );
 
 export interface ButtonLinkProps
-  extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
-    VariantProps<typeof buttonVariants> {
+  extends Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>,
+    VariantProps<typeof buttonVariants>,
+    Omit<LinkProps, 'className'> {
   asChild?: boolean;
-  to: string;
 }
 
 const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
   ({ className, variant, size, asChild = false, to, ...props }, ref) => {
-    const Comp = asChild ? Slot : Link;
+    if (asChild) {
+      return (
+        <Slot
+          className={cn(buttonVariants({ variant, size, className }))}
+          ref={ref}
+          {...props}
+        />
+      );
+    }
+    
     return (
-      <Comp
+      <Link
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         to={to}
