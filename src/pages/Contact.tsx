@@ -113,6 +113,14 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
+              
+              <div className="mt-8 rounded-lg overflow-hidden shadow-sm">
+                <img 
+                  src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="Our office building" 
+                  className="w-full h-auto object-cover aspect-video"
+                />
+              </div>
             </div>
             
             <div className="bg-card border border-border rounded-lg p-6 shadow-sm">

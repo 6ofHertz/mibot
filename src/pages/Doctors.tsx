@@ -24,7 +24,7 @@ const doctorsData = [
     experience: "12 years",
     rating: 4.9,
     location: "Nairobi, Kenya",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     availability: "Available Today",
   },
   {
@@ -34,7 +34,7 @@ const doctorsData = [
     experience: "8 years",
     rating: 4.7,
     location: "Mombasa, Kenya",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1622902046580-2b47f47f5471?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     availability: "Available Tomorrow",
   },
   {
@@ -44,7 +44,7 @@ const doctorsData = [
     experience: "15 years",
     rating: 4.8,
     location: "Kisumu, Kenya",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1623854767648-e7bb8009f0db?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     availability: "Available Today",
   },
   {
@@ -54,7 +54,7 @@ const doctorsData = [
     experience: "10 years",
     rating: 4.6,
     location: "Nakuru, Kenya",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1612531386530-97286d97c2d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     availability: "Available in 2 days",
   },
   {
@@ -64,7 +64,7 @@ const doctorsData = [
     experience: "7 years",
     rating: 4.5,
     location: "Eldoret, Kenya",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     availability: "Available Today",
   },
   {
@@ -74,7 +74,7 @@ const doctorsData = [
     experience: "14 years",
     rating: 4.9,
     location: "Nairobi, Kenya",
-    image: "/placeholder.svg",
+    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     availability: "Available Tomorrow",
   },
 ];

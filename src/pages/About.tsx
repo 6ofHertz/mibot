@@ -27,7 +27,7 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img 
-                  src="/placeholder.svg" 
+                  src="https://images.unsplash.com/photo-1584516150877-6510fb605783?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="Doctor caring for patients" 
                   className="rounded-2xl shadow-md w-full h-auto aspect-square object-cover"
                 />
@@ -87,34 +87,86 @@ const About = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[1, 2, 3].map((item) => (
-                <div key={item} className="bg-card rounded-xl overflow-hidden shadow-sm border border-border">
-                  <div className="aspect-[4/3] bg-muted">
-                    <img 
-                      src="/placeholder.svg" 
-                      alt="Team Member" 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-1">Dr. Jane Smith</h3>
-                    <p className="text-primary mb-4">Chief Medical Officer</p>
-                    <p className="text-muted-foreground mb-4">
-                      Specialist in pediatrics with over 15 years of experience in maternal and child healthcare.
-                    </p>
-                    <div className="flex space-x-4">
-                      <a href="#" className="text-muted-foreground hover:text-primary">
-                        <span className="sr-only">LinkedIn</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                      </a>
-                      <a href="#" className="text-muted-foreground hover:text-primary">
-                        <span className="sr-only">Twitter</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
-                      </a>
-                    </div>
+              <div className="bg-card rounded-xl overflow-hidden shadow-sm border border-border">
+                <div className="aspect-[4/3]">
+                  <img 
+                    src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    alt="Dr. Jane Smith" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-1">Dr. Jane Smith</h3>
+                  <p className="text-primary mb-4">Chief Medical Officer</p>
+                  <p className="text-muted-foreground mb-4">
+                    Specialist in pediatrics with over 15 years of experience in maternal and child healthcare.
+                  </p>
+                  <div className="flex space-x-4">
+                    <a href="#" className="text-muted-foreground hover:text-primary">
+                      <span className="sr-only">LinkedIn</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" className="text-muted-foreground hover:text-primary">
+                      <span className="sr-only">Twitter</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                    </a>
                   </div>
                 </div>
-              ))}
+              </div>
+              
+              <div className="bg-card rounded-xl overflow-hidden shadow-sm border border-border">
+                <div className="aspect-[4/3]">
+                  <img 
+                    src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    alt="Dr. Robert Johnson" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-1">Dr. Robert Johnson</h3>
+                  <p className="text-primary mb-4">Medical Director</p>
+                  <p className="text-muted-foreground mb-4">
+                    Obstetrician with a passion for improving maternal healthcare access in underserved communities.
+                  </p>
+                  <div className="flex space-x-4">
+                    <a href="#" className="text-muted-foreground hover:text-primary">
+                      <span className="sr-only">LinkedIn</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" className="text-muted-foreground hover:text-primary">
+                      <span className="sr-only">Twitter</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-card rounded-xl overflow-hidden shadow-sm border border-border">
+                <div className="aspect-[4/3]">
+                  <img 
+                    src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    alt="Dr. Sarah Kimani" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-1">Dr. Sarah Kimani</h3>
+                  <p className="text-primary mb-4">Technology Director</p>
+                  <p className="text-muted-foreground mb-4">
+                    Expert in healthcare technology with a background in pediatric medicine and public health initiatives.
+                  </p>
+                  <div className="flex space-x-4">
+                    <a href="#" className="text-muted-foreground hover:text-primary">
+                      <span className="sr-only">LinkedIn</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" className="text-muted-foreground hover:text-primary">
+                      <span className="sr-only">Twitter</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
