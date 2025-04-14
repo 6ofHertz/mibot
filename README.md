@@ -1,193 +1,148 @@
+```markdown
 # 🌿 AfyaMkononi Telecare Platform
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Tech](https://img.shields.io/badge/stack-React%20%2B%20TypeScript%20%2B%20Tailwind-blueviolet)
+![Tech Stack](https://img.shields.io/badge/stack-React%20%2B%20TypeScript%20%2B%20Tailwind-blueviolet)
 
 **AfyaMkononi** is a telemedicine application focused on **maternal and child healthcare**, offering remote consultation services, AI-powered symptom checks, and health education tools.
 
----
+![Platform Preview](https://via.placeholder.com/1200x600/3b82f6/ffffff?text=AfyaMkononi+Platform+Preview)
 
 ## 🚀 Project Overview
 
 AfyaMkononi provides:
-
 - Virtual access to healthcare specialists
 - Smart symptom assessment
 - Resourceful tools for maternal and child health management
 
----
-
 ## 🧩 Core Features
 
-- 🎥 **Video Consultations** – Face-to-face remote appointments  
-- 🧑‍⚕️ **Specialist Directory** – Browse certified maternal and child health professionals  
-- 🗓️ **Easy Scheduling** – Book and manage appointments  
-- 🤖 **AI Symptom Checker** – Powered by simulated Gemini AI  
-- ⏰ **Real-time Clock** – Toggle between 12/24-hour formats  
-
----
+| Feature | Description |
+|---------|-------------|
+| 🎥 Video Consultations | Face-to-face remote appointments with healthcare providers |
+| 🧑‍⚕️ Specialist Directory | Database of certified maternal and child health professionals |
+| 🗓️ Easy Scheduling | Intuitive appointment booking and management system |
+| 🤖 AI Symptom Checker | Preliminary symptom analysis using simulated Gemini AI |
+| ⏰ Real-time Clock | Interactive analog clock with 12/24-hour format toggle |
 
 ## ⚙️ Tech Stack
 
-| Category           | Tech                                                                 |
-|-------------------|----------------------------------------------------------------------|
-| Frontend          | [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/) |
-| UI Components     | [shadcn/ui](https://ui.shadcn.com/) (Radix UI primitives)             |
-| Styling           | [Tailwind CSS](https://tailwindcss.com/)                             |
-| Routing           | [React Router DOM](https://reactrouter.com/)                         |
-| Forms             | [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) |
-| Charts            | [Recharts](https://recharts.org/en-US/)                              |
-| Icons             | [Lucide React](https://lucide.dev/)                                  |
+### Frontend
+- **Framework**: [React](https://react.dev/) with [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/) (based on Radix UI)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 
----
+### Key Libraries
+- **Routing**: [React Router DOM](https://reactrouter.com/)
+- **Forms**: [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/)
+- **Charts**: [Recharts](https://recharts.org/en-US/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-## 📁 Project Structure
+## 📂 Project Structure
 
-src/ ├── components/ │ ├── home/ # Homepage UI blocks │ ├── layout/ # Navbar, Footer │ ├── symptom-checker/ # AI checker components │ └── ui/ # shadcn/ui components ├── hooks/ # Custom React hooks ├── lib/ # Utility functions ├── pages/ # Routed page components └── main.tsx # Entry point
+src/
+├── components/       # Reusable UI components
+│   ├── home/        # Homepage components
+│   ├── layout/      # Navigation components
+│   ├── symptom-checker/ # AI symptom checker
+│   └── ui/          # UI component library
+├── hooks/           # Custom React hooks
+├── lib/             # Utility functions
+├── pages/           # Page components
+└── main.tsx         # Application entry point
+```
 
-yaml
-Copy
-Edit
-
----
-
-## 🧠 Key Components
+## 🏗️ Key Components
 
 ### Layout
-- `Navbar.tsx`: Top navigation
-- `Footer.tsx`: Bottom site info
+- `Navbar.tsx`: Main navigation header
+- `Footer.tsx`: Site footer with contact information
 
-### Home
-- `Hero.tsx`: Landing section
-- `Features.tsx`: Platform highlights
-- `AIFeature.tsx`: Symptom checker intro
-- `Services.tsx`: Services provided
-- `CTASection.tsx`: Call-to-action
-- `AnalogClock.tsx`: Interactive clock
+### Home Page
+- `Hero.tsx`: Main landing section
+- `Features.tsx`: Platform feature highlights
+- `AIFeature.tsx`: AI symptom checker promotion
+- `AnalogClock.tsx`: Interactive clock component
 
 ### Symptom Checker
-- `SymptomChecker.tsx`: Entry page
-- `SymptomInput.tsx`: Symptom input form
-- `GeminiResponse.tsx`: Simulated AI process
-- `AIResponse.tsx`: AI result display
+- `SymptomChecker.tsx`: Main symptom analysis page
+- `SymptomInput.tsx`: User symptom input form
+- `AIResponse.tsx`: Formatted AI analysis results
 
----
+## 🚀 Getting Started
 
-## 📸 Project Preview
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn package manager
 
-> *Coming soon!*  
-> Add screenshots, GIFs, or mockup designs here for a visual overview.
+### Installation
 
----
-
-## 🛠️ Getting Started
-
-### ✅ Prerequisites
-
-- Node.js (v14+)
-- npm or yarn
-
-### 💻 Setup
-
-```bash
-# 1. Clone the repo
+# Clone the repository
 git clone https://github.com/your-username/afyamkononi.git
 cd afyamkononi
 
-# 2. Install dependencies
-npm install  # or yarn install
+# Install dependencies
+npm install
 
-# 3. Start dev server
-npm run dev  # or yarn dev
-☁️ AWS Free Tier Deployment Guide
-🪣 S3 Bucket
-Go to S3 Console → Create bucket
+# Start development server
+npm run dev
+```
 
-Disable "Block All Public Access"
+## ☁️ AWS Deployment Guide
 
-Enable Static Website Hosting
+### S3 Bucket Setup
+1. Create a new S3 bucket with unique name
+2. Disable "Block all public access"
+3. Enable static website hosting
+4. Set index.html as both index and error document
+5. Add bucket policy for public read access
 
-Set index.html as both index & error doc
+### CloudFront Configuration
+1. Create distribution with S3 as origin
+2. Configure HTTPS with ACM certificate
+3. Set default root object to index.html
+4. Configure error pages for SPA routing
+5. Enable compression
 
-Add public-read policy for the bucket
+### Cost Management
+- Set up AWS Budgets alerts
+- Monitor Free Tier usage limits
+- Use AWS Cost Explorer for spending analysis
 
-🌐 CloudFront
-Create a distribution → Set S3 as origin
+## 🔮 Future Enhancements
 
-Configure HTTPS with ACM
+### Technical Roadmap
+- Backend integration with AWS Lambda
+- User authentication using AWS Cognito
+- Database integration (DynamoDB/RDS)
+- WebRTC for video consultations
+- Enhanced mobile responsiveness
 
-Default root object: index.html
+### Feature Roadmap
+- Electronic health records system
+- Digital prescription management
+- Payment gateway integration
+- Community health forums
+- Multilingual support
 
-Redirect 404 to index.html
+## ♿ Accessibility & Compliance
+- WCAG 2.1 AA compliant
+- HIPAA-ready architecture (future phase)
+- GDPR-compliant data handling
+- Screen reader optimized components
 
-Enable GZIP compression
+## ⚡ Performance Optimization
+- Lazy loading for faster initial load
+- Service Worker for offline capabilities
+- Image optimization pipeline
+- Code splitting strategy
 
-📡 Route 53 (Optional)
-Register / use a domain
+## 📄 License
+Distributed under the MIT License. See `LICENSE` for more information.
 
-Create a Hosted Zone
+---
 
-Point A record to CloudFront distribution
-
-🔁 Continuous Deployment
-Use GitHub Actions or AWS CodePipeline
-
-Auto-deploy build to S3
-
-Invalidate CloudFront cache post-deploy
-
-💰 Cost Management
-Use AWS Budgets for usage alerts
-
-Monitor Free Tier limits
-
-Analyze spend via AWS Cost Explorer
-
-🚧 Future Enhancements
-Technical Additions
-AWS Lambda + API Gateway for backend
-
-Cognito for auth
-
-DynamoDB / RDS integration
-
-WebRTC for real-time video
-
-Full mobile responsiveness
-
-Feature Roadmap
-Digital patient records
-
-E-prescription system
-
-Payment integration
-
-Advanced appointment scheduling
-
-Maternal-child health content library
-
-Community support forums
-
-♿ Accessibility & Compliance
-✅ WCAG 2.1 compliance
-
-🔒 HIPAA-ready architecture (future scope)
-
-📜 GDPR user data compliance
-
-⚡ Performance Tips
-Lazy loading assets
-
-Service Worker (PWA support)
-
-Optimized images
-
-Code splitting and caching
-
-📄 License
-MIT © [Your Name / Org]
-
-🧡
-"Because every mother and child deserves accessible, intelligent healthcare—right from the palm of their hand.”
-
+> "Because every mother and child deserves accessible, intelligent healthcare—right from the palm of their hand."
+```
