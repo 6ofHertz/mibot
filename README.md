@@ -1,8 +1,11 @@
-```markdown
+The README already follows a well-structured format. However, here is the refined and formatted version adhering to best practices for a README file:
+
+---
+
 # 🌿 AfyaMkononi Telecare Platform
 
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)  
+![License](https://img.shields.io/badge/license-MIT-blue.svg)  
 ![Tech Stack](https://img.shields.io/badge/stack-React%20%2B%20TypeScript%20%2B%20Tailwind-blueviolet)
 
 AfyaMkononi is a telemedicine application focused on **maternal and child healthcare**, offering **remote consultation services**, **AI-powered symptom checks**, and **health education tools**.
@@ -38,9 +41,9 @@ AfyaMkononi provides innovative healthcare solutions, enabling users to:
 
 ## 🧩 Core Features
 
-| Feature             | Description                                                                 |
-|---------------------|-----------------------------------------------------------------------------|
-| 🎥 **Video Consultations**  | Face-to-face remote appointments with healthcare providers               |
+| Feature                  | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| 🎥 **Video Consultations** | Face-to-face remote appointments with healthcare providers               |
 | 🧑‍⚕️ **Specialist Directory** | Database of certified maternal and child health professionals            |
 | 🗓️ **Easy Scheduling**       | Intuitive appointment booking and management system                     |
 | 🤖 **AI Symptom Checker**    | Preliminary symptom analysis using simulated Gemini AI                  |
@@ -108,6 +111,7 @@ src/
 
 ### Installation
 
+```bash
 # Clone the repository
 git clone https://github.com/6ofHertz/mibot.git
 cd mibot
@@ -198,11 +202,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ---
 
 > "Because every mother and child deserves accessible, intelligent healthcare—right from the palm of their hand."
-```
 
-### Key Improvements:
-1. **Table of Contents**: Makes navigation easier.
-2. **Reorganized Sections**: Added logical flow and clear separation of topics.
-3. **Improved Instructions**: Expanded installation and deployment steps for clarity.
-4. **Contributing Section**: Encourages community contributions.
-5. **Improved Formatting**: Consistent use of headings, tables, and code blocks.
+---
